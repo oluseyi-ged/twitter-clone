@@ -19,7 +19,7 @@ function Post({ displayName, verified, username, text, avatar }) {
             <h3>
               odd developer
               <CheckCircleIcon className="post__badge" />
-              <span>@royged</span>
+              <span className="post__headerSpecial">@royged</span>
             </h3>
             <div className="post__headerDescription">
               <p>10th clone... thought i'd make it twitter</p>

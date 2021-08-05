@@ -18,11 +18,13 @@
   margin-left: 20px;
   font-size: 20px;
   border: none;
+  background-color: transparent;
 }
 
 .tweetBox__imageInput {
   border: none;
   padding: 10px;
+  background-color: transparent;
 }
 
 .tweetBox__tweetButton {
