@@ -8,28 +8,26 @@ import FavoriteBorderIcon from "@material-ui/icons/FavoriteBorder"
 import PublishOutlinedIcon from "@material-ui/icons/PublishOutlined"
 import BarChartOutlinedIcon from "@material-ui/icons/BarChartOutlined"
 
-function Post({ displayName, verified, username, text, avatar }) {
+function Post({ displayName, verified, username, text, avatar, image }) {
   return (
     <div className="post">
       <div className="post__avatar">
-        <Avatar src="https://res.cloudinary.com/odd-developer/image/upload/v1627925104/P8iXlJ7x_400x400_f7xbus.jpg" />
+        <Avatar src={avatar} />
       </div>
       <div className="post__body">
         <div className="post__header">
           <div className="post__headerText">
             <h3>
-              odd developer
-              <CheckCircleIcon className="post__badge" />
-              <span className="post__headerSpecial">@royged</span>
+              {displayName}
+
+              {verified && <CheckCircleIcon className="post__badge" />}
+              <span className="post__headerSpecial">@{username}</span>
             </h3>
             <div className="post__headerDescription">
-              <p>10th clone... thought i'd make it twitter</p>
+              <p>{text}</p>
             </div>
           </div>
-          <img
-            src="https://media4.giphy.com/media/VbnXItjZpCzC3zO84Z/200w.webp?cid=ecf05e47i6cgd6lgfnytg4jsd2x7ygosl3p2x5cmptnmhfzk&rid=200w.webp&ct=g"
-            alt=""
-          />
+          <img src={image} alt="" />
           <div className="post__footer">
             <ChatBubbleOutlineIcon fontSize="small" />
             <RepeatIcon fontSize="small" />
