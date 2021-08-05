@@ -12,12 +12,18 @@ function Widget() {
       </div>
       <div className="widget__widgetContainer">
         <h2>What's happening</h2>
-
         <TwitterTweetEmbed
           tweetId={"1421205582409777157"}
           options={{ theme: "dark" }}
         />
-
+        <TwitterTweetEmbed
+          tweetId={"1344388303123066887"}
+          options={{ theme: "dark" }}
+        />
+        <TwitterTweetEmbed
+          tweetId={"1400365660497235970"}
+          options={{ theme: "dark" }}
+        />
         <TwitterTimelineEmbed
           sourceType="profile"
           screenName="royGED"
