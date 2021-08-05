@@ -19,12 +19,14 @@
   font-size: 20px;
   border: none;
   background-color: transparent;
+  color: white;
 }
 
 .tweetBox__imageInput {
   border: none;
   padding: 10px;
   background-color: transparent;
+  color: white;
 }
 
 .tweetBox__tweetButton {
