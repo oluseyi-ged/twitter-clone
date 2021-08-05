@@ -6,6 +6,7 @@ import ChatBubbleOutlineIcon from "@material-ui/icons/ChatBubbleOutline"
 import RepeatIcon from "@material-ui/icons/Repeat"
 import FavoriteBorderIcon from "@material-ui/icons/FavoriteBorder"
 import PublishOutlinedIcon from "@material-ui/icons/PublishOutlined"
+import BarChartOutlinedIcon from "@material-ui/icons/BarChartOutlined"
 
 function Post({ displayName, verified, username, text, avatar }) {
   return (
@@ -34,6 +35,7 @@ function Post({ displayName, verified, username, text, avatar }) {
             <RepeatIcon fontSize="small" />
             <FavoriteBorderIcon fontSize="small" />
             <PublishOutlinedIcon fontSize="small" />
+            <BarChartOutlinedIcon fontSize="small" />
           </div>
         </div>
       </div>
